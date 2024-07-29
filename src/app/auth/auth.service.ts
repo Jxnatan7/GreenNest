@@ -1,7 +1,6 @@
 import {inject, Injectable} from '@angular/core';
 import {tap} from "rxjs";
 import {HttpClient} from "@angular/common/http";
-import {LoginForm} from "../pages/login/login.component";
 
 @Injectable({
   providedIn: 'root'

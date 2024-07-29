@@ -37,22 +37,3 @@ export class LoginComponent {
     }
   }
 }
-
-export type LoginForm = {
-  email: string;
-  password: string;
-}
-
-// login() {
-//   const form: LoginForm = this.form.value;
-//
-//   if (form.email && form.password) {
-//     this.authService.login(form)
-//       .subscribe(
-//         () => {
-//           console.log("User is logged in");
-//           this.router.navigateByUrl('/');
-//         }
-//       );
-//   }
-// }

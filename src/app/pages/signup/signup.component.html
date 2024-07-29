@@ -1,1 +1,29 @@
-<p>signup works!</p>
+<div class="w-full h-screen flex justify-between items-center gap-10 bg-gray-50">
+  <div class="px-5 w-1/2 h-auto flex justify-end">
+    <div class="flex flex-col h-auto items-start">
+      <div>
+        <h1 class="text-4xl mb-2">Novo registro</h1>
+        <span class="text-lg">Já possui uma conta? <a routerLink="/login" class="underline">Faça Login</a></span>
+      </div>
+      <div class="mt-10"></div>
+      <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+        <div class="mb-5">
+          <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Seu nome</label>
+          <input type="name" id="name" formControlName="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block min-w-80 p-2.5" placeholder="Jonatan Santos" />
+        </div>
+        <div class="mb-5">
+          <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Seu email</label>
+          <input type="email" id="email" formControlName="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block min-w-80 p-2.5" placeholder="name@email.com" />
+        </div>
+        <div class="mb-5">
+          <label for="password" class="block mb-2 text-sm font-medium text-gray-900">Sua senha</label>
+          <input type="password" id="password" formControlName="password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block min-w-80 p-2.5" />
+        </div>
+        <button type="submit" class="text-white bg-green-700 rounded-lg p-2 w-36">Acessar</button>
+      </form>
+    </div>
+  </div>
+  <div class="w-1/2">
+    <img src="assets/images/gn-10.svg">
+  </div>
+</div>
